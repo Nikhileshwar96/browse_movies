@@ -44,19 +44,19 @@ class OMDBMovieRepository extends MovieRepository {
   }
 
   @override
-  Future<List<Movie>> getSearchResult(String searchQuery) async {
+  Future<SearchResult> getSearchResult(String searchQuery) async {
     var responseJson = await _apiRepository.get(
       '$_apiPath/?s=$searchQuery',
       _apiKey,
     );
 
-    var movies = SearchResult.fromJson(jsonDecode(responseJson)).movies;
+    var searchResult = SearchResult.fromJson(jsonDecode(responseJson));
     _localDbRepository.insertDataTable(
       searchTableName,
-      movies.map((e) => e.toJson()).toList(),
+      searchResult.movies.map((e) => e.toJson()).toList(),
       needDeletion: true,
     );
-    return movies;
+    return searchResult;
   }
 
   @override

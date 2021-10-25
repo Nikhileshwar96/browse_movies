@@ -39,17 +39,18 @@ class MyApp extends StatelessWidget {
           title: 'Flutter Demo',
           theme: ThemeData(
               primarySwatch: const MaterialColor(0xFF000000, {
-                50: Colors.black,
-                100: Colors.black,
-                200: Colors.black,
-                300: Colors.black,
-                400: Colors.black,
-                500: Colors.black,
-                600: Colors.black,
-                700: Colors.black,
-                800: Colors.black,
-                900: Colors.black
+                50: Colors.grey,
+                100: Colors.grey,
+                200: Colors.grey,
+                300: Colors.grey,
+                400: Colors.grey,
+                500: Colors.grey,
+                600: Colors.grey,
+                700: Colors.grey,
+                800: Colors.grey,
+                900: Colors.grey
               }),
+              unselectedWidgetColor: Colors.grey,
               backgroundColor: Colors.black,
               scaffoldBackgroundColor: Colors.black,
               textTheme: Theme.of(context).textTheme.copyWith(

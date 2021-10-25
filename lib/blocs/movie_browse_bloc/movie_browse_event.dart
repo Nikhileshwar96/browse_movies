@@ -13,3 +13,10 @@ class SearchMovies extends MovieBrowseEvent {
     this.searchQuery,
   );
 }
+
+class FilterContent extends MovieBrowseEvent {
+  final ContentType contentType;
+  FilterContent(
+    this.contentType,
+  );
+}

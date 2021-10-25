@@ -2,8 +2,14 @@ import 'movie.dart';
 
 class SearchResult {
   List<Movie> movies = [];
+  bool response = false;
+  String failureType = '';
 
-  SearchResult({required this.movies});
+  SearchResult({
+    required this.movies,
+    required this.response,
+    required this.failureType,
+  });
 
   SearchResult.fromJson(Map<String, dynamic> json) {
     if (json['Search'] != null) {
@@ -11,6 +17,12 @@ class SearchResult {
       json['Search'].forEach((v) {
         movies.add(Movie.fromJson(v));
       });
+    }
+    if (json['Response'] != null) {
+      response = json['Response'].toString().toLowerCase() == 'true';
+    }
+    if (json['Error'] != null) {
+      failureType = json['Error'];
     }
   }
 

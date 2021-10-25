@@ -32,10 +32,23 @@ class _MovieDetailsPageState extends State<MovieDetailsPage> {
               children: [
                 Expanded(
                   flex: 1,
-                  child: Align(
+                  child: Container(
                     alignment: Alignment.topLeft,
+                    margin: const EdgeInsets.only(
+                      top: 10,
+                      left: 10,
+                    ),
                     child: TextButton(
                       child: const Icon(Icons.arrow_back),
+                      style: TextButton.styleFrom(
+                        minimumSize: const Size(50, 50),
+                        backgroundColor: Colors.white,
+                        shape: const RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(25),
+                          ),
+                        ),
+                      ),
                       onPressed: () {
                         Navigator.pop(context);
                       },

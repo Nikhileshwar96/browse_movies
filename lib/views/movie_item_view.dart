@@ -24,21 +24,29 @@ class MovieItemView extends StatelessWidget {
                 Radius.circular(20),
               ),
             ),
-            child: Image.network(
-              movie.poster,
-              fit: BoxFit.fill,
-            ),
+            child: movie.poster.contains('http')
+                ? Image.network(
+                    movie.poster,
+                    fit: BoxFit.fitWidth,
+                  )
+                : Image.asset('assets/image_not_available.jpg'),
             clipBehavior: Clip.hardEdge,
           ),
           Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
                 child: Container(),
               ),
               Text(
                 movie.title,
-                maxLines: 1,
-                overflow: TextOverflow.fade,
+                style: Theme.of(context).textTheme.subtitle2?.copyWith(
+                      fontWeight: FontWeight.w700,
+                    ),
+                maxLines: 2,
+              ),
+              const SizedBox(
+                height: 5,
               ),
               Text(
                 movie.year,

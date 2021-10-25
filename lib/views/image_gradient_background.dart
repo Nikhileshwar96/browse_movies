@@ -17,10 +17,12 @@ class _ImagegradientBackgroundState extends State<ImagegradientBackground> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.network(
-              widget.posterUrl,
-              fit: BoxFit.fitWidth,
-            ),
+            widget.posterUrl.contains('http')
+                ? Image.network(
+                    widget.posterUrl,
+                    fit: BoxFit.fitWidth,
+                  )
+                : Image.asset('assets/image_not_available.jpg'),
             Expanded(
               child: Container(),
             ),

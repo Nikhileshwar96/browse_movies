@@ -163,10 +163,6 @@ class _MovieBrowsePageState extends State<MovieBrowsePage> {
                     ),
                   ),
                   controller: searchController,
-                  onSubmitted: (value) {
-                    BlocProvider.of<MovieBrowseBloc>(context)
-                        .add(SearchMovies(searchController.text));
-                  },
                   onChanged: (value) {
                     BlocProvider.of<MovieBrowseBloc>(context)
                         .add(SearchMovies(searchController.text));

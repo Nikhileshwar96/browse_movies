@@ -55,43 +55,43 @@ class MyApp extends StatelessWidget {
               scaffoldBackgroundColor: Colors.black,
               textTheme: Theme.of(context).textTheme.copyWith(
                     bodyText1: Theme.of(context).textTheme.bodyText1?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     bodyText2: Theme.of(context).textTheme.bodyText2?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     subtitle1: Theme.of(context).textTheme.subtitle1?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     subtitle2: Theme.of(context).textTheme.subtitle2?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     headline1: Theme.of(context).textTheme.headline1?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     headline2: Theme.of(context).textTheme.headline2?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     headline3: Theme.of(context).textTheme.headline3?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     headline4: Theme.of(context).textTheme.headline4?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     headline5: Theme.of(context).textTheme.headline5?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                     headline6: Theme.of(context).textTheme.headline6?.copyWith(
-                          letterSpacing: 2,
+                          letterSpacing: 1.2,
                           color: const Color(0xFFCCCCCC),
                         ),
                   ),

@@ -1,16 +1,18 @@
 # browse_movies
 
-A new Flutter project.
+App to browse through OMDB API.
 
-## Getting Started
+## Pattern used
 
-This project is a starting point for a Flutter application.
+BLoC pattern is used to maintaain architecture within thhe app.
 
-A few resources to get you started if this is your first Flutter project:
+## Features add
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Search module handle successful search, failure due to too many results,  
+- Storage of alredy fetched movie details in local DB
+- Filter content based on types `movie` and `series`
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Major packages used
+- `bloc` and `flutter_bloc` - for maintaining architecture
+- `http` - for making http requests
+- `sqflite` - for local storage interactions

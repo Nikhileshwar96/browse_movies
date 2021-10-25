@@ -13,7 +13,7 @@ class _MovieSearchTooManyResultsState extends State<MovieSearchTooManyResults> {
   Widget build(BuildContext context) {
     return const Center(
       child: Text(
-        'Too many results, try filtering.',
+        'Search is too broad, please try filtering.',
       ),
     );
   }

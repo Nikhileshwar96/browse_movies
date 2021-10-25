@@ -16,3 +16,21 @@ BLoC pattern is used to maintaain architecture within thhe app.
 - `bloc` and `flutter_bloc` - for maintaining architecture
 - `http` - for making http requests
 - `sqflite` - for local storage interactions
+
+## Screenshots
+
+### Search
+
+![Search](search.png "Search")
+
+### Filter
+
+![Filtering](Filtering.png "Filtering")
+
+### Detail view
+
+![Details](detail_vieww.png "details")
+
+### Not found
+
+![Not found](not_found.png "Not found")
